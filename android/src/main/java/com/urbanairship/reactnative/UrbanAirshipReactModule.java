@@ -119,6 +119,16 @@ public class UrbanAirshipReactModule extends ReactContextBaseJavaModule {
     }
 
     /**
+     * Sets notification badge number.
+     *
+     * @param count int to set the badge.
+     */
+    @ReactMethod
+    public void setBadgeNumber(int count) {
+        //Not yet possible in Android Urban Airship Implementation
+    }
+
+    /**
      * Checks if user notifications are enabled.
      *
      * @param promise The JS promise.

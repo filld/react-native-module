@@ -115,6 +115,15 @@ class UrbanAirship {
     UrbanAirshipModule.setUserNotificationsEnabled(enabled);
   }
 
+    /**
+   * Sets the badge number.
+   *
+   * @param {number} count number of badges.
+   */
+  static setBadgeNumber(count: number) {
+    UrbanAirshipModule.setBadgeNumber(count);
+  }
+
   /**
    * Checks if user notifications are enabled or not.
    *

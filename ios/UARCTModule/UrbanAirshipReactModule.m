@@ -40,6 +40,10 @@ RCT_EXPORT_METHOD(setUserNotificationsEnabled:(BOOL)enabled) {
     [UAirship push].userPushNotificationsEnabled = enabled;
 }
 
+RCT_EXPORT_METHOD(setBadgeNumber:(NSInteger)count) {
+    [[UAirship push] setBadgeNumber:count];
+}
+
 RCT_REMAP_METHOD(isUserNotificationsEnabled,
                  isUserNotificationsEnabled_resolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject) {
